@@ -1,0 +1,86 @@
+<style>
+
+    body {
+        background-color: #3498db;
+        position: absolute;
+        top: 30px;
+        left: 400px;
+       
+    }
+
+    h1 {
+        text-align: center;
+    }
+     
+    #mybackdiv {
+         width: 513px;
+         height: 513px;
+         border: 2px solid #f00;
+         padding: 5px;
+         background: darkblue;
+    } 
+
+    div {
+            width: 30px;
+            height: 30px;
+            background: #f1f1f1;
+            border: 1px solid #34495e;
+            display:inline-block;
+    }
+    
+  
+
+</style>
+
+<html>
+
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="discription" content="16×16_sequar">
+
+       
+    </head>
+
+    <body>
+        <h1>Game</h1>
+        <div id="mybackdiv"></div>
+        
+       
+
+
+
+            <script>
+               
+
+                for (var i = 0; i < 256; i++ ) {    
+                var mydiv = document.createElement("div");
+                mybackdiv.appendChild(mydiv);
+                
+
+                var myattribute = document.createAttribute("onmouseover");
+                myattribute.value = "mOver(this)"; 
+                mydiv.setAttributeNode(myattribute);
+
+                var myclass = document.createAttribute("class");
+                myclass.value = "divclass";
+                mydiv.setAttributeNode(myclass);
+                
+                }
+                
+                function mOver(obj) {
+                   obj.style.background = "#000";
+                
+                }
+
+            
+                
+            
+
+
+               
+            </script>
+    </body>
+
+    
+
+</html>
